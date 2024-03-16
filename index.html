@@ -1,49 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/fixy.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>FiXY | WEB</title>
-</head>
-
-<body class="o-hidden">
-  <div class="section-home container-lg h350" id="home">
-    <header>
-      <nav class="nav flex-x-space-b shadow-n">
-        <div class="logo">
-          <div class="straight h60 b-f0f0f0-x w20 pos-abs b-r10 l100 t7"></div>
-          <div class="curve h50 b-f0f0f0-x w15 pos-abs b-r10 l109 t-6"></div>
-          <div class="curve h50 b-f0f0f0-x w15 pos-abs b-r10 l109 t14"></div>
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>FiXY - a CSS FrameWork for Small Projects, beginner and new comers</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="scribbler-global.css">
+      <link rel="stylesheet" href="scribbler-landing.css">
+      <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="doc.html" class="link link--dark"><i class="fa fa-book"></i> Documentation</a></li>
+        <li class="menu__item"><a href="https://github.com/abrarishere/fixyintellisence" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">FiXY</h1>
+      <p class="hero__description">Take your CSS cdn in terminal</p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">abrarishere ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">Installation</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="mac">mac</li>
+            <li class="tab" data-tab="linux">linux</li>
+            <li class="tab" data-tab="win">win</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">$ sudo port install wget && wget https://github.com/abrarishere/
+            fixyintellisence/releases/download/
+            FixyIntelliSence-1.3/fixy.min.css</code>
+            <code class="tab__pane linux">$ sudo apt-get install curl && curl -O https://github.com/abrarishere/
+            fixyintellisence/releases/download/
+            FixyIntelliSence-1.3/fixy.min.css</code>
+            <code class="tab__pane win">$ curl -O https://github.com/abrarishere/
+            fixyintellisence/releases/download/
+            FixyIntelliSence-1.3/fixy.min.css</code>
+          </pre>
         </div>
-        <div class="nav-brand pos-abs l148 t20">
-          <h2 class="c-f0f0f0-x">Fixy</h2>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Fast & Light</h3>
+          <p>A nimble CSS framework engineered for speed and efficiency, delivering lightning-fast performance without compromising on flexibility or style.</p>
         </div>
-        <ul class="nav-items">
-          <li><a class="c-f0f0f0-x" href="#home">Home</a></li>
-          <li><a class="c-f0f0f0-x" href="#features">Features</a></li>
-          <li><a class="c-f0f0f0-x" href="docs.html">Documentation</a></li>
-          <button class="btn btn-primary-outline m-t7"><a href="https://github.com/abrarishere/fixyintellisence/releases/download/FixyIntelliSence-1.3/fixy.min.css">Download</a></button>
+        <div class="feature__item">
+          <h3 class="section__title">Unlock Every Possibility</h3>
+          <p>Dive into a world of endless design opportunities with FiXY. Discover how our lightweight framework empowers you to create stunning websites with ease.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Innovative</h3>
+          <p>Embrace innovation with FiXY's cutting-edge features designed to streamline your development process and enhance user experiences.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Simplicity</h3>
+          <p>Experience the power of simplicity with FiXY, where every line of code is crafted for efficiency and clarity, ensuring smooth and intuitive development.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Harmony</h3>
+          <p>Experience the perfect balance of form and function with FiXY, where every element harmonizes to create visually stunning and highly functional websites.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Agility</h3>
+          <p>Unleash the agility of FiXY, empowering you to swiftly adapt and evolve your web projects with seamless integration and effortless customization. </p>
+        </div>
+      </div>
+      <div class="keybinding">
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Basic Classess</h3>
+          <li>margin and padding <span class="keybinding__label">.m and .p</span></li>
+          <li>top,bottom,left,right <span class="keybinding__label">.t .b  .l  .r</span></li>
+          <li> Height and width<span class="keybinding__label">.h and .w</span></li>
+          <li>background and color<span class="keybinding__label">.b-{hex color having second letter 0 like f0f0f0}-x and .c-{hex color having second letter 0 like f0f0f0}-x</span></li>
         </ul>
-      </nav>
-    </header>
-    <div class="home-text pos-rel h200 w500   flex flex-both flex-d-col g30 p-t50 ">
-      <h1 class="c-f0f0f0-x f-s40">Fixy CSS FrameWork</h1>
-      <p class="c-f0f0f0-x f-s18">Free Smooth, Light and easy to jse frame work for Bloggers,Hobbyiers and small projects</p>
-      <button class="btn btn-primary-outline m-w40-pct flex-y-center-s">Get Started</button>
+        <ul class="keybinding__detail">
+          <h3 class="keybinding__title">Markdown Keybindings</h3>
+          <li><span class="keybinding__label">Ctrl+A</span> Insert Link Markdown</li>
+          <li><span class="keybinding__label">Ctrl+I</span> Insert Image Markdown</li>
+          <li><span class="keybinding__label">Ctrl+V</span> Insert YouTube Video</li>
+          <li><span class="keybinding__label">Ctrl+T</span> Insert Table</li>
+        </ul>
+      </div>
+      <div class="callout">
+        <p>Read our documentation for advanced classes and customization</p>
+        <a href="doc.html" class="button--primary">Documentation</a>
+      </div>
     </div>
-  </div>
-  <div class="section-features container-lg o-hidden h100-vh" id="features">
-    <div class="home-1 b-f01000-x flex o-hidden container-lg">
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v1.3</h4>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Improving the styles with better classess</li>
+              <li>Design updates</li>
+              <li>Added Responsiveness for different sizes</li>
+              <li>Some predefined components</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v1.2-beta</h4>
+          </div>    
+          <div class="changelog__detail">
+            <ul>
+              <li>Some advanced styling added</li>
+              <li>Basic text highlighting</li>
+              <li>Fresh Design</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v1.1</h4>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Added height in %</li>
+              <li>Flex, Grid and Table is added</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__callout">
+          <a href="https://github.com/abrarishere/fixyintellisence/releases" class="button--secondary">Checkout Full Releases History</a>
+        </div>
+      </div>
     </div>
-  </div>
-  
-  
-  
-  <script src="https://kit.fontawesome.com/2473dfbb63.js" crossorigin="anonymous"></script>
-</body>
-
+    <footer class="footer">FiXY is a free CSS Framework created exclusively for <a href="https://github.com/abrarishere/fixyintellisence" target="_blank" class="link link--light">Small WebDevelopers</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
 </html>

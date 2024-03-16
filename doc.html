@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FiXY Documentation - a code documentation page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="scribbler-global.css">
+    <link rel="stylesheet" href="scribbler-doc.css">
+    <link rel="stylesheet" href="f.css">
+    <link rel="author" href="humans.txt">
+  </head>
+  <body>
+    <div class="doc__bg"></div>
+    <nav class="header">
+      <h1 class="logo">FiXY <span class="logo__thin">Doc</span></h1>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://github.com/abrarishere/fixyintellisence" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item"><a href="index.html" class="link link--dark"><i class="fa fa-home"></i> Home</a></li>
+      </ul>
+    </nav>
+    <div class="wrapper">
+      <aside class="doc__nav">
+        <ul>
+          <li class="js-btn selected">Introduction</li>
+          <li class="js-btn">Configuration</li>
+          <li class="js-btn">Classes</li>
+          <li class="js-btn">Components</li>
+        </ul>
+      </aside>
+      <article class="doc__content">
+        <section class="js-section">
+          <h3 class="section__title">Get Started</h3>
+          <p>
+Explore the essentials of FiXY and jumpstart your journey to exceptional web design. Let's dive into the documentation to unleash the full potential of our CSS framework.</p>
+          <h3 class="section__title">Installation</h3>
+          <div class="code__block code__block--notabs">
+            <pre class="code code--block">
+              <code>
+                $ wget https://github.com/
+                abrarishere/fixyintellisence/
+                releases/download/
+                FixyIntelliSence-1.3/fixy.min.css
+              </code>
+            </pre>
+          </div>
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Configuration</h3>
+          <p>We can configure classes for FiXY, such as your colors height and the default value from following classes by <code class="code code-inline">&lt;style&gt;</code> tag in internal css in <code class="code code-inline">&lt;head&gt;</code> tag.</p>
+          <p>As, When i have to change <i>.h10</i> that is equal to 10px and we want to equal 100 than just in <code class="code code-inline">&lt;head&gt;</code> tag  we will say <i>.h10<b>{height:100px;}</b></i> and this will be done.</p>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Classes with Values</h3>
+          <table id="customers" class="table">
+            <tr>
+              <th>Options</th>
+              <th>Value</th>
+              <th>Class</th>
+            </tr>
+            <tr>
+              <td>Font Size</td>
+              <td>font-size:{1-200}<i><br>{if <b>null</b> then px <b>otherwise</b> write}</i><b>-rem</b></td>
+              <td><b>.f-s10 or f-s10-rem</b><u><br>{<b>.f-s1-rem</b> === <b>0.1rem</b>}</u></td>
+            </tr>
+            <tr><td colspan="3"><b>Example: </b>
+            <p class="f-s10">This is .f-s10</p> and <p class="f-s10-rem">this is .f-s10-rem</p></td></tr>
+            <tr>
+              <td>Border Radius</td>
+              <td>border-radius:{1-300}<i><br>{if <b>null</b> then px <b>otherwise</b> write}</i><b>-pct</b></td>
+              <td><b>.b-r10 or b-r10-
+              pct</b><u><br>{<b>.b-r1-pct</b> == <b>1%</b>}</u></td>
+            </tr>
+            <tr><td colspan="3"><b>Example: </b>
+            <div class="b-r1 b-f0f000-x h20">This is .b-r10</div> and <div class="b-r10-pct h20 b-f0f000-x">this is .b-r10-pct</div></td></tr>
+            <tr>
+              <td>height</td>
+              <td>height:{1-500}<br>{always in <b>px</b>}</td>
+              <td><b>.h1</b> to <b>.h500</b></td>
+            </tr>
+            <tr><td colspan="3"><b>Example: </b>
+            <div class="b-f01010-x h30">This is .h30</div> and <div class="h70 b-f01010-x">this is .h70</div></td></tr>
+
+          </table>
+          <hr />
+        </section>
+        <section class="js-section">
+          <h3 class="section__title">Components</h3>
+          <ol>
+            <li>Buttons</li>
+            <li>Navigation Bars</li>
+          </ol>
+          <h2>Buttons:</h2>
+          <h2>Navigation Bars:</h2>
+        </section>
+      </article>
+    </div>
+
+    <footer class="footer">FiXY is a free CSS Framework created exclusively for <a href="https://github.com/abrarishere/fixyintellisence" target="_blank" class="link link--light">WebDevelopers</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="scribbler.js"></script>
+  </body>
+</html>
