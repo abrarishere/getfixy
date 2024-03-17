@@ -94,6 +94,7 @@ hr {
   border-radius: 3px;
   font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
   background: var(--bg-color);
+  word-wrap: break-word;
   border: 1px solid var(--code-bg-color);
   color: var(--primary-color-light);
 }

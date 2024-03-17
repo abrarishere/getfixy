@@ -12,9 +12,7 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `https://cdn.jsdelivr.net
-  /gh/abrarishere/fixyintellisence
-  @main/fixy.min.c.css`;
+  var txt = `https://cdn.jsdelivr.net/gh/abrarishere/fixyintellisenc@main/fixy.min.c.css`;
   var speed = 60;
 
   function typeItOut () {
